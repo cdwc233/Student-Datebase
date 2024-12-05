@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>256</y>
+      <w>208</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>::Mylist
+--
+~conn = null: Connection
+~stmt = null: Statement
+~pstmt = null: PreparedStatement
+~rs = null: ResultSet
+--
++Mylist(): ctor
++getConn(): boolean
++displayTableData(Mylist test): void
++main(String[] args): void
++actionPerformed(ActionEvent e): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>256</y>
+      <w>680</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>::JFrame
+--
++contentPane: JPanel
++btnNewButton: JButton
++btnNewButton_1: JButton
++btnNewButton_2: JButton
++stable: JTable
++model = new DefaultTableModel(new Object[][] {}, new String[] { "姓名", "学号", "性别", "专业", "班级" }): DefaultTableModel
+--
++JFrame(): ctor
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>248</y>
+      <w>216</w>
+      <h>232</h>
+    </coordinates>
+    <panel_attributes>::JDialog
+--
+-model: DefaultTableModel
+-contentPanel = new JPanel(): JPanel
++textField: JTextField
++textField_1: JTextField
++comboBox: JComboBox
++comboBox_1: JComboBox
++sexButtonGroup: ButtonGroup
++cancelButton: JButton
++okButton: JButton
++rdbtnNewRadioButton: JRadioButton
++rdbtnNewRadioButton_1: JRadioButton
+--
++JDialog(DefaultTableModel model): ctor
++JDialog(JTable stable): ctor
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>584</x>
+      <y>256</y>
+      <w>72</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>384</y>
+      <w>72</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>584</x>
+      <y>352</y>
+      <w>72</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
